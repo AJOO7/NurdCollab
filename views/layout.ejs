@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <%- style   %>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="/"><b>Nurd Collab</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+
+                            <ul class="nav navbar-nav navbar-right">
+
+                                <li>
+                                    <a href=""><i class="fas fa-info"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href=""><i class="fas fa-question-circle"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <%-body%>
+    <div class="disco">
+        
+    </div>
+        <footer>
+            <nav class="navbar navbar-inverse navbar-fixed-bottom ">
+                <div class="container-fluid ">
+                   
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4" style="text-align: center;">@AJ007 All rights reserved</div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+      
+        <%- script %>
+
+</body>
+
+
+</html>
