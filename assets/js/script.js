@@ -31,7 +31,7 @@ function reset() {
     mirrorEditor.setValue("");
 }
 
-var input = document.getElementById("select");
+var input = document.getElementById("selectTheme");
 function selectTheme() {
 
     var theme = input.options[input.selectedIndex].textContent;
@@ -43,6 +43,11 @@ function selectLang() {
     mirrorEditor.setOption("mode", lang);
 }
 
+$('#uploadButton').click(function (e) {
+    e.preventDefault();
+    $('#fileInput').click();
+}
+);
 let fileInput = document.getElementById("fileInput");
 fileInput.addEventListener('change', () => {
     let files = fileInput.files;
@@ -72,7 +77,7 @@ function saveTextAsFile() {
     console.log(mirrorEditor.getValue());
     console.log("and", textToWrite);
     var textFileAsBlob = new Blob([mirrorEditor.getValue()], { type: 'application/json' });
-    var fileNameToSaveAs = "down" +Date.now() + ".txt";
+    var fileNameToSaveAs = "down" + Date.now() + ".txt";
 
     var downloadLink = document.createElement("a");
     downloadLink.download = fileNameToSaveAs;

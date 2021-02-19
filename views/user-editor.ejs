@@ -232,9 +232,14 @@
         <button id="download" title="Download code">
           <i class="fas fa-file-download fa-2x"></i>
         </button>
-        <button id="fileInput" title="Upload">
-          <i class="fas fa-file-upload fa-2x"></i>
+        <button
+          id="uploadButton"
+          title="Upload"
+          style="background-color: transparent; border: none"
+        >
+          <i class="fas fa-file-upload fa-2x"> </i>
         </button>
+        <input id="fileInput" type="file" style="height: 0; width: 0" />
 
         <!--        <input type="button" id="download" value="Download" />
     <input id="fileInput" type="file" /> -->
@@ -470,19 +475,7 @@
     <!--try replacing with clear font awesome symbol-->
   </div>
 </div>
-<footer>
-  <nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4" style="text-align: center">
-          @AJ007 All rights reserved
-        </div>
-        <div class="col-sm-4"></div>
-      </div>
-    </div>
-  </nav>
-</footer>
+
 <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
