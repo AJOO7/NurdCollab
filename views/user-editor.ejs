@@ -208,257 +208,281 @@
       class="room-container"
       style="display: flex; flex-direction: row; height: 20px"
     >
-      <p>Room id-></p>
-      <div id="rooom"><%= roomId %></div>
-      <button
-        onclick="copyToClipboard('#rooom')"
-        style="margin-bottom: 0; padding: 0"
-      >
-        <p style="margin-bottom: 0; padding: 0">Copy</p>
-      </button>
-    </div>
-    <select onchange="selectTheme()" id="select">
-      <option selected="">default</option>
-      <option>3024-day</option>
-      <option>3024-night</option>
-      <option>abcdef</option>
-      <option>ambiance</option>
-      <option>ayu-dark</option>
-      <option>ayu-mirage</option>
-      <option>base16-dark</option>
-      <option>base16-light</option>
-      <option>bespin</option>
-      <option>blackboard</option>
-      <option>cobalt</option>
-      <option>colorforth</option>
-      <option>darcula</option>
-      <option>dracula</option>
-      <option>duotone-dark</option>
-      <option>duotone-light</option>
-      <option>eclipse</option>
-      <option>elegant</option>
-      <option>erlang-dark</option>
-      <option>gruvbox-dark</option>
-      <option>hopscotch</option>
-      <option>icecoder</option>
-      <option>idea</option>
-      <option>isotope</option>
-      <option>lesser-dark</option>
-      <option>liquibyte</option>
-      <option>lucario</option>
-      <option>material</option>
-      <option>material-darker</option>
-      <option>material-palenight</option>
-      <option>material-ocean</option>
-      <option>mbo</option>
-      <option>mdn-like</option>
-      <option>midnight</option>
-      <option>monokai</option>
-      <option>moxer</option>
-      <option>neat</option>
-      <option>neo</option>
-      <option>night</option>
-      <option>nord</option>
-      <option>oceanic-next</option>
-      <option>panda-syntax</option>
-      <option>paraiso-dark</option>
-      <option>paraiso-light</option>
-      <option>pastel-on-dark</option>
-      <option>railscasts</option>
-      <option>rubyblue</option>
-      <option>seti</option>
-      <option>shadowfox</option>
-      <option>solarized dark</option>
-      <option>solarized light</option>
-      <option>the-matrix</option>
-      <option>tomorrow-night-bright</option>
-      <option>tomorrow-night-eighties</option>
-      <option>ttcn</option>
-      <option>twilight</option>
-      <option>vibrant-ink</option>
-      <option>xq-dark</option>
-      <option>xq-light</option>
-      <option>yeti</option>
-      <option>yonce</option>
-      <option>zenburn</option>
-    </select>
-    <select onchange="selectLang()" id="selectLang">
-      <option selected="">default</option>
-      <option>javascript</option>
-      <option>text/x-cmake</option>
-      <option>text/apl</option>
-      <option>text/x-ttcn-asn</option>
-      <option>text/x-asterisk</option>
-      <option>text/x-csrc</option>
-      <option>text/x-c++src</option>
-      <option>text/x-java</option>
-      <option>text/x-csharp</option>
-      <option>text/x-objectivec</option>
-      <option>text/x-scala</option>
-      <option>text/x-vertex</option>
-      <option>x-shader/x-fragment</option>
-      <option>text/x-squirrel</option>
-      <option>text/x-ceylon</option>
-      <option>text/x-clojure</option>
-      <option>text/x-gss</option>
-      <option>text/x-coffeescript</option>
-      <option>text/x-common-lisp</option>
-      <option>text/x-coq</option>
-      <option>text/x-crystal</option>
-      <option>text/css</option>
-      <option>text/x-scss</option>
-      <option>text/x-less</option>
-      <option>application/x-cypher-query</option>
-      <option>text/x-python</option>
-      <option>text/x-cython</option>
-      <option>text/x-d</option>
-      <option>text/x-django</option>
-      <option>text/x-dockerfile</option>
-      <option>text/x-diff</option>
-      <option>application/xml-dtd</option>
-      <option>text/x-dylan</option>
-      <option>text/x-ecl</option>
-      <option>text/x-eiffel</option>
-      <option>text/x-elm</option>
-      <option>text/x-erlang</option>
-      <option>text/x-factor</option>
-      <option>text/x-fcl</option>
-      <option>text/x-forth</option>
-      <option>text/x-fortran</option>
-      <option>text/x-ocaml</option>
-      <option>text/x-fsharp</option>
-      <option>text/x-gas</option>
-      <option>text/x-feature</option>
-      <option>text/x-go</option>
-      <option>text/x-groovy</option>
-      <option>text/x-haml</option>
-      <option>text/x-handlebars-template</option>
-      <option>text/x-literate-haskell</option>
-      <option>text/x-haxe</option>
-      <option>text/x-hxml</option>
-      <option>application/x-aspx</option>
-      <option>application/x-ejs</option>
-      <option>application/x-jsp</option>
-      <option>application/x-erb</option>
-      <option>text/html</option>
-      <option>message/http</option>
-      <option>text/x-idl</option>
-      <option>text/x-jade</option>
-      <option>application/json</option>
-      <option>application/ld+json</option>
-      <option>text/typescript</option>
-      <option>application/typescript</option>
-      <option>text/x-julia</option>
-      <option>text/x-livescript</option>
-      <option>text/x-lua</option>
-      <option>text/x-markdown</option>
-      <option>text/x-mathematica</option>
-      <option>application/mbox</option>
-      <option>text/mirc</option>
-      <option>text/x-modelica</option>
-      <option>text/x-mscgen</option>
-      <option>text/x-xu</option>
-      <option>text/x-msgenny</option>
-      <option>text/nginx</option>
-      <option>text/x-nsis</option>
-      <option>text/n-triples</option>
-      <option>text/x-ocaml</option>
-      <option>text/x-fsharp</option>
-      <option>text/x-octave</option>
-      <option>text/x-oz</option>
-      <option>text/x-pascal</option>
-      <option>text/x-perl</option>
-      <option>application/pgp</option>
-      <option>application/pgp-keys</option>
-      <option>application/pgp-signature</option>
-      <option>application/x-httpd-php</option>
-      <option>text/x-php</option>
-      <option>text/x-pig</option>
-      <option>application/x-powershell</option>
-      <option>text/x-properties</option>
-      <option>text/x-ini</option>
-      <option>text/x-protobuf</option>
-      <option>text/x-puppet</option>
-      <option>text/x-python</option>
-      <option>text/x-q</option>
-      <option>text/x-rsrc</option>
-      <option>text/x-rpm-spec</option>
-      <option>text/x-rpm-changes</option>
-      <option>text/x-rst</option>
-      <option>text/x-ruby</option>
-      <option>text/x-rustsrc</option>
-      <option>text/x-sas</option>
-      <option>text/x-sass</option>
-      <option>text/x-spreadsheet</option>
-      <option>text/x-scheme</option>
-      <option>text/x-sh</option>
-      <option>application/sieve</option>
-      <option>application/x-slim</option>
-      <option>text/x-stsrc</option>
-      <option>text/x-smarty</option>
-      <option>text/x-solr</option>
-      <option>text/x-soy</option>
-      <option>text/x-styl</option>
-      <option>text/x-sql</option>
-      <option>text/x-mysql</option>
-      <option>text/x-mariadb</option>
-      <option>text/x-cassandra</option>
-      <option>text/x-plsql</option>
-      <option>text/x-mssql</option>
-      <option>text/x-hive</option>
-      <option>text/x-pgsql</option>
-      <option>text/x-gql</option>
-      <option>application/sparql-query</option>
-      <option>text/x-swift</option>
-      <option>text/x-stex</option>
-      <option>text/x-tcl</option>
-      <option>text/x-textile</option>
-      <option>text/x-tiddlywiki</option>
-      <option>text/x-toml</option>
-      <option>text/x-tornado</option>
-      <option>troff</option>
-      <option>text/x-ttcn</option>
-      <option>text/x-ttcn3</option>
-      <option>text/x-ttcnpp</option>
-      <option>text/turtle</option>
-      <option>text/x-vb</option>
-      <option>text/vbscript</option>
-      <option>text/velocity</option>
-      <option>text/x-verilog</option>
-      <option>text/x-systemverilog</option>
-      <option>text/x-vhdl</option>
-      <option>text/x-vue</option>
-      <option>text/x-webidl</option>
-      <option>application/xml</option>
-      <option>text/html</option>
-      <option>application/xquery</option>
-      <option>text/x-yacas</option>
-      <option>text/x-yaml</option>
-      <option>text/x-z80</option>
-      <option>text/x-ez80</option>
-    </select>
-    <button onclick="reset()">reset</button>
-    <button onclick="copyToClipboard()">Doc copy</button>
-    <input type="button" id="download" value="Download" />
-    <input id="fileInput" type="file" />
+      <p>
+        Room ID&nbsp&nbsp:
+        <button
+          onclick="copyToClipboard('#rooom')"
+          style="margin-bottom: 0; padding: 0"
+          title="Click to Copy Room ID"
+          class="btn"
+        >
+          <div id="room"><%= roomId %>&nbsp&nbsp&nbsp&nbsp</div>
+        </button>
+      </p>
 
-    <label for="speed">Speed</label>
-    <input
-      type="number"
-      name="spee"
-      id="speed"
-      min=".5"
-      max="3"
-      step=".5"
-      value="1"
-    />
-    <button id="play-button">Play</button>
-    <button id="pause-button">Pause</button>
-    <button id="stop-button">Stop</button>
+      <!--    <p style="margin-bottom: 0; padding: 0">Copy</p>  -->
+    </div>
+    <br />
+    <div class="utility-container">
+      <div class="left">
+        <button id="cpy" onclick="copyToClipboard()" title="Copy Code">
+          <i class="fas fa-copy fa-2x"></i>
+        </button>
+        <!--try replacing with copy fontawesome -->
+        <button id="download" title="Download code">
+          <i class="fas fa-file-download fa-2x"></i>
+        </button>
+        <button id="fileInput" title="Upload">
+          <i class="fas fa-file-upload fa-2x"></i>
+        </button>
+
+        <!--        <input type="button" id="download" value="Download" />
+    <input id="fileInput" type="file" /> -->
+      </div>
+      <div class="right">
+        <select onchange="selectTheme()" id="selectTheme">
+          <option selected="">default</option>
+          <option>3024-day</option>
+          <option>3024-night</option>
+          <option>abcdef</option>
+          <option>ambiance</option>
+          <option>ayu-dark</option>
+          <option>ayu-mirage</option>
+          <option>base16-dark</option>
+          <option>base16-light</option>
+          <option>bespin</option>
+          <option>blackboard</option>
+          <option>cobalt</option>
+          <option>colorforth</option>
+          <option>darcula</option>
+          <option>dracula</option>
+          <option>duotone-dark</option>
+          <option>duotone-light</option>
+          <option>eclipse</option>
+          <option>elegant</option>
+          <option>erlang-dark</option>
+          <option>gruvbox-dark</option>
+          <option>hopscotch</option>
+          <option>icecoder</option>
+          <option>idea</option>
+          <option>isotope</option>
+          <option>lesser-dark</option>
+          <option>liquibyte</option>
+          <option>lucario</option>
+          <option>material</option>
+          <option>material-darker</option>
+          <option>material-palenight</option>
+          <option>material-ocean</option>
+          <option>mbo</option>
+          <option>mdn-like</option>
+          <option>midnight</option>
+          <option>monokai</option>
+          <option>moxer</option>
+          <option>neat</option>
+          <option>neo</option>
+          <option>night</option>
+          <option>nord</option>
+          <option>oceanic-next</option>
+          <option>panda-syntax</option>
+          <option>paraiso-dark</option>
+          <option>paraiso-light</option>
+          <option>pastel-on-dark</option>
+          <option>railscasts</option>
+          <option>rubyblue</option>
+          <option>seti</option>
+          <option>shadowfox</option>
+          <option>solarized dark</option>
+          <option>solarized light</option>
+          <option>the-matrix</option>
+          <option>tomorrow-night-bright</option>
+          <option>tomorrow-night-eighties</option>
+          <option>ttcn</option>
+          <option>twilight</option>
+          <option>vibrant-ink</option>
+          <option>xq-dark</option>
+          <option>xq-light</option>
+          <option>yeti</option>
+          <option>yonce</option>
+          <option>zenburn</option>
+        </select>
+        <select onchange="selectLang()" id="selectLang">
+          <option selected="">default</option>
+          <option>javascript</option>
+          <option>text/x-cmake</option>
+          <option>text/apl</option>
+          <option>text/x-ttcn-asn</option>
+          <option>text/x-asterisk</option>
+          <option>text/x-csrc</option>
+          <option>text/x-c++src</option>
+          <option>text/x-java</option>
+          <option>text/x-csharp</option>
+          <option>text/x-objectivec</option>
+          <option>text/x-scala</option>
+          <option>text/x-vertex</option>
+          <option>x-shader/x-fragment</option>
+          <option>text/x-squirrel</option>
+          <option>text/x-ceylon</option>
+          <option>text/x-clojure</option>
+          <option>text/x-gss</option>
+          <option>text/x-coffeescript</option>
+          <option>text/x-common-lisp</option>
+          <option>text/x-coq</option>
+          <option>text/x-crystal</option>
+          <option>text/css</option>
+          <option>text/x-scss</option>
+          <option>text/x-less</option>
+          <option>application/x-cypher-query</option>
+          <option>text/x-python</option>
+          <option>text/x-cython</option>
+          <option>text/x-d</option>
+          <option>text/x-django</option>
+          <option>text/x-dockerfile</option>
+          <option>text/x-diff</option>
+          <option>application/xml-dtd</option>
+          <option>text/x-dylan</option>
+          <option>text/x-ecl</option>
+          <option>text/x-eiffel</option>
+          <option>text/x-elm</option>
+          <option>text/x-erlang</option>
+          <option>text/x-factor</option>
+          <option>text/x-fcl</option>
+          <option>text/x-forth</option>
+          <option>text/x-fortran</option>
+          <option>text/x-ocaml</option>
+          <option>text/x-fsharp</option>
+          <option>text/x-gas</option>
+          <option>text/x-feature</option>
+          <option>text/x-go</option>
+          <option>text/x-groovy</option>
+          <option>text/x-haml</option>
+          <option>text/x-handlebars-template</option>
+          <option>text/x-literate-haskell</option>
+          <option>text/x-haxe</option>
+          <option>text/x-hxml</option>
+          <option>application/x-aspx</option>
+          <option>application/x-ejs</option>
+          <option>application/x-jsp</option>
+          <option>application/x-erb</option>
+          <option>text/html</option>
+          <option>message/http</option>
+          <option>text/x-idl</option>
+          <option>text/x-jade</option>
+          <option>application/json</option>
+          <option>application/ld+json</option>
+          <option>text/typescript</option>
+          <option>application/typescript</option>
+          <option>text/x-julia</option>
+          <option>text/x-livescript</option>
+          <option>text/x-lua</option>
+          <option>text/x-markdown</option>
+          <option>text/x-mathematica</option>
+          <option>application/mbox</option>
+          <option>text/mirc</option>
+          <option>text/x-modelica</option>
+          <option>text/x-mscgen</option>
+          <option>text/x-xu</option>
+          <option>text/x-msgenny</option>
+          <option>text/nginx</option>
+          <option>text/x-nsis</option>
+          <option>text/n-triples</option>
+          <option>text/x-ocaml</option>
+          <option>text/x-fsharp</option>
+          <option>text/x-octave</option>
+          <option>text/x-oz</option>
+          <option>text/x-pascal</option>
+          <option>text/x-perl</option>
+          <option>application/pgp</option>
+          <option>application/pgp-keys</option>
+          <option>application/pgp-signature</option>
+          <option>application/x-httpd-php</option>
+          <option>text/x-php</option>
+          <option>text/x-pig</option>
+          <option>application/x-powershell</option>
+          <option>text/x-properties</option>
+          <option>text/x-ini</option>
+          <option>text/x-protobuf</option>
+          <option>text/x-puppet</option>
+          <option>text/x-python</option>
+          <option>text/x-q</option>
+          <option>text/x-rsrc</option>
+          <option>text/x-rpm-spec</option>
+          <option>text/x-rpm-changes</option>
+          <option>text/x-rst</option>
+          <option>text/x-ruby</option>
+          <option>text/x-rustsrc</option>
+          <option>text/x-sas</option>
+          <option>text/x-sass</option>
+          <option>text/x-spreadsheet</option>
+          <option>text/x-scheme</option>
+          <option>text/x-sh</option>
+          <option>application/sieve</option>
+          <option>application/x-slim</option>
+          <option>text/x-stsrc</option>
+          <option>text/x-smarty</option>
+          <option>text/x-solr</option>
+          <option>text/x-soy</option>
+          <option>text/x-styl</option>
+          <option>text/x-sql</option>
+          <option>text/x-mysql</option>
+          <option>text/x-mariadb</option>
+          <option>text/x-cassandra</option>
+          <option>text/x-plsql</option>
+          <option>text/x-mssql</option>
+          <option>text/x-hive</option>
+          <option>text/x-pgsql</option>
+          <option>text/x-gql</option>
+          <option>application/sparql-query</option>
+          <option>text/x-swift</option>
+          <option>text/x-stex</option>
+          <option>text/x-tcl</option>
+          <option>text/x-textile</option>
+          <option>text/x-tiddlywiki</option>
+          <option>text/x-toml</option>
+          <option>text/x-tornado</option>
+          <option>troff</option>
+          <option>text/x-ttcn</option>
+          <option>text/x-ttcn3</option>
+          <option>text/x-ttcnpp</option>
+          <option>text/turtle</option>
+          <option>text/x-vb</option>
+          <option>text/vbscript</option>
+          <option>text/velocity</option>
+          <option>text/x-verilog</option>
+          <option>text/x-systemverilog</option>
+          <option>text/x-vhdl</option>
+          <option>text/x-vue</option>
+          <option>text/x-webidl</option>
+          <option>application/xml</option>
+          <option>text/html</option>
+          <option>application/xquery</option>
+          <option>text/x-yacas</option>
+          <option>text/x-yaml</option>
+          <option>text/x-z80</option>
+          <option>text/x-ez80</option>
+        </select>
+      </div>
+    </div>
 
     <textarea id="editor"></textarea>
+    <button id="clr" onclick="reset()" title="CLear text">
+      <i class="fas fa-broom fa-2x"></i>
+    </button>
+    <!--try replacing with clear font awesome symbol-->
   </div>
 </div>
+<footer>
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4" style="text-align: center">
+          @AJ007 All rights reserved
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+  </nav>
+</footer>
 <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
