@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/css/home.css" />
+<div class="index-container">
+  <div class="inner-container">
+    <div class="index-header">Nurd Collab</div>
+    <div
+      class="index-intro"
+      style="color: black; opacity: 100%; text-align: center"
+    >
+      Nurd collab let nerds create cloud room where they can can collaborate
+      with other nerds and work on any project with real time editor and real
+      time communication.just a step to ease the lives of nerd community..
+    </div>
+    <div class="index-animation">
+      <div class="join-container">
+        <input
+          id="myInput"
+          type="text"
+          placeholder="xxxxxx-xxxxx-xxxxx-xxxxx"
+        />
+      </div>
+      <a id="join" onclick="myFunction()" href="/users/">
+        <div class="sign-up">Join</div>
+      </a>
+      <p>-----or-----</p>
+      <a href="/users/">
+        <div class="sign-in">Create</div>
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  function myFunction() {
+    var inputVal = document.getElementById("myInput").value;
+    var anchor = document.getElementById("join");
+    anchor.href = anchor.href + inputVal;
+  }
+</script>
