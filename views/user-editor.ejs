@@ -441,6 +441,7 @@
     <button onclick="copyToClipboard()">Doc copy</button>
     <input type="button" id="download" value="Download" />
     <input id="fileInput" type="file" />
+
     <label for="speed">Speed</label>
     <input
       type="number"
@@ -458,3 +459,20 @@
     <textarea id="editor"></textarea>
   </div>
 </div>
+<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+  defer
+></script>
+<script src="/js/script.js" defer></script>
+<script>
+  const ROOM_ID = "<%= roomId %>";
+  function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
+</script>
+<div id="video-grid"></div>
