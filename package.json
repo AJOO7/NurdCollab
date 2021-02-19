@@ -14,8 +14,7 @@
   "author": "Bitfinity",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AJOO7/nurdcollab/issues",
-    "start": "node index.js"
+    "url": "https://github.com/AJOO7/nurdcollab/issues"
   },
   "homepage": "https://github.com/AJOO7/nurdcollab#readme",
   "dependencies": {
