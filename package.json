@@ -13,7 +13,8 @@
   "author": "Bitfinity",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AJOO7/nurdcollab/issues"
+    "url": "https://github.com/AJOO7/nurdcollab/issues",
+    "start": "nodemon index.js"
   },
   "homepage": "https://github.com/AJOO7/nurdcollab#readme",
   "dependencies": {
