@@ -83,7 +83,6 @@ video {
 .left{
     display: flex;
     align-content: flex-start;
-    margin-right: 50.5%;
 }
 
 .btn{
@@ -114,8 +113,6 @@ video {
 }
 
 #clr{
-    margin-left: 95.5%; 
-    margin-top: 5px;
     background: #3d3d3e;
     border:none;
 }
@@ -127,11 +124,34 @@ video {
 #selectLang{ 
     border-radius: 5px;
     height: 30px;
+    width: auto;
 }
 
 #selectTheme{
     border-radius: 5px;
     height:30px;
+    width:auto;
+}
+
+.audio{
+
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#play-button{
+    background: #3d3d3e;
+    border: none;
+}
+
+#pause-button{
+    background: #3d3d3e;
+    border: none;
+}
+
+#stop-button{
+    background: #3d3d3e;
+    border: none;
 }
 
 i{
