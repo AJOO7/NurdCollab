@@ -240,6 +240,9 @@
           <i class="fas fa-file-upload fa-2x"> </i>
         </button>
         <input id="fileInput" type="file" style="height: 0; width: 0" />
+        <button id="clr" onclick="reset()" title="CLear code">
+          <i class="fas fa-broom fa-2x"></i>
+        </button>
 
         <!--        <input type="button" id="download" value="Download" />
     <input id="fileInput" type="file" /> -->
@@ -469,9 +472,24 @@
     </div>
 
     <textarea id="editor"></textarea>
-    <button id="clr" onclick="reset()" title="CLear text">
-      <i class="fas fa-broom fa-2x"></i>
-    </button>
+    <div class="audio">
+      <label for="speed" style="color: #ffffff">Playback speed</label>
+      <input
+        type="number"
+        name="spee"
+        id="speed"
+        min=".5"
+        max="3"
+        step=".5"
+        value="1"
+      />
+      <button id="play-button" title="Play"><i class="fas fa-play"></i></button>
+      <button id="pause-button" title="Pause">
+        <i class="fas fa-pause"></i>
+      </button>
+      <button id="stop-button" title="Stop"><i class="fas fa-stop"></i></button>
+    </div>
+
     <!--try replacing with clear font awesome symbol-->
   </div>
 </div>
