@@ -211,12 +211,12 @@
       <p>
         Room ID&nbsp&nbsp:
         <button
-          onclick="copyToClipboard('#rooom')"
+          onclick="copyClipboard('#room')"
           style="margin-bottom: 0; padding: 0"
           title="Click to Copy Room ID"
           class="btn"
         >
-          <div id="room"><%= roomId %>&nbsp&nbsp&nbsp&nbsp</div>
+          <div id="room"><%= roomId %></div>
         </button>
       </p>
 
@@ -484,12 +484,13 @@
 <script src="/js/script.js" defer></script>
 <script>
   const ROOM_ID = "<%= roomId %>";
-  function copyToClipboard(element) {
+  function copyClipboard(element) {
     var $temp = $("<input>");
     $("body").append($temp);
-    $temp.val($(element).text()).select();
+    $temp.val($(element).html()).select();
     document.execCommand("copy");
     $temp.remove();
+    // alert("working");
   }
 </script>
 <div id="video-grid"></div>
