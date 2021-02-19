@@ -1,0 +1,170 @@
+/* .index-container {
+    background: linear-gradient(rgba(216, 94, 190, 0.3), rgba(47, 12, 245, 0.3)), url('../images/Capture.PNG');
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+    background-size: auto;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-container {
+
+    width: 80%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: hsla(0, 0%, 100%, 0.733);
+    margin: 10px;
+    border-radius: 25px;
+    position: relative;
+    top: 4%;
+}
+
+.index-header {
+    position: relative;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.index-intro {
+    padding: 15px;
+}
+
+.index-animation {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-animation .sign-up {
+    font-size: 1.5vw;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    /* position: relative;
+    top: 10vh;
+    right: 5vw; */
+/* }
+
+.index-animation .sign-in {
+    font-size: 1.5vw;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    /* position: relative;
+top: 10vh;
+left: 5vw; */
+/* }
+
+.index-animation :hover {
+    text-decoration: none;
+    color: black;
+}
+
+#myInput {
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px grey;
+    margin: 10px;
+    padding: 3px;
+
+}
+
+.room-container button {
+    position: relative;
+    top: 10px;
+    height: 10px;
+    padding: 0;
+} */
+.index-container {
+    background: linear-gradient(rgba(216, 94, 190, 0.3), rgba(47, 12, 245, 0.3)), url('../images/Capture.PNG');
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+    background-size: auto;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-container {
+    width: 80%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: hsla(0, 0%, 100%, 0.733);
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 4%;
+}
+
+.index-header {
+    position: relative;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.index-intro {
+    padding: 15px;
+}
+
+.index-animation {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.index-animation .connect {
+    font-size: 1.5vw;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #7a87ff;
+    border-radius: 2.5%;    /* position: relative;
+    top: 10vh;
+    right: 5vw; *
+}*/
+
+.index-animation .connect {
+    font-size: 1.5vw;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #7a87ff;
+    border-radius: 15px;
+    /* position: relative;
+top: 10vh;
+left: 5vw; */
+}
+
+#join {
+    margin-bottom: 4px;
+}
+
+.index-animation .connect:hover {
+    text-decoration: none;
+    background-color: #5868fd;
+    border-radius: 15px;
+}
+
+#myInput {
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px grey;
+    margin: 10px;
+    padding: 3px;
+    ;
+
+}
