@@ -1,4 +1,6 @@
+// deploying sockets
 var socket = io('/');
+// setting up code mirror 
 const editor = document.getElementById("editor");
 const mirrorEditor = CodeMirror.fromTextArea(
     editor,
@@ -24,14 +26,14 @@ mirrorEditor.on("keyup", function (evt) {
 })
 
 
-
+// setting up theme
 var input = document.getElementById("selectTheme");
 function selectTheme() {
 
     var theme = input.options[input.selectedIndex].textContent;
     mirrorEditor.setOption("theme", theme);
 }
-
+// setting up language
 var inputLang = document.getElementById("selectLang");
 function selectLang() {
     var lang = inputLang.options[inputLang.selectedIndex].textContent;
@@ -39,36 +41,23 @@ function selectLang() {
 }
 
 
-
-
-
-
-
-
-// editor.addEventListener("keyup", (evt) => {
-//     const text = editor.value
-//     socket.send(text)
-// })
-
 // sending data
 socket.on('message', (data) => {
     mirrorEditor.setValue(data);
     // editor.value = data
 })
-// const socket = io('/');
-
+// setting up peerjs for wrtc
 const videoGrid = document.getElementById('video-grid');
 const myPeer = new Peer(undefined, {
     path: "/peerjs",
     host: '/',
     port: '443',
 });
-
+// creating video element
 const myVideo = document.createElement('video');
-// 
+// muting own video for avoiding echo
 myVideo.muted = true;
-
-
+// streaming and connecting to new user connected in the room
 const peers = {}
 navigator.mediaDevices.getUserMedia({
     video: true,
@@ -92,19 +81,13 @@ navigator.mediaDevices.getUserMedia({
     });
 });
 
-
-
 myPeer.on('open', id => {
     socket.emit('join-room', ROOM_ID, id);
 });
 
-
-
 socket.on('user-disconnected', userId => {
     if (peers[userId]) peers[userId].close()
 })
-
-
 
 function connectToNewUser(userId, stream) {
     // console.log("######");
