@@ -1,37 +1,149 @@
 <link rel="stylesheet" href="/css/home.css" />
 <div class="index-container">
   <div class="inner-container">
-    <div class="index-header">Nurd Collab</div>
-    <div
-      class="index-intro"
-      style="color: black; opacity: 100%; text-align: center"
-    >
-      Nurd collab let nerds create cloud room where they can can collaborate
-      with other nerds and work on any project with real time editor and real
-      time communication.just a step to ease the lives of nerd community..
+    <div>
+      <div class="index-header">NurdCollab</div>
+      <div class="index-intro">
+        Nurd let nerds create cloud room where they can can collaborate with
+        other nerds and work on any project with real time editor and real time
+        communication. Just a step to ease the lives of nerd community...
+      </div>
+      <div class="index-animation">
+        <div class="join-container">
+          <input
+            id="myInput"
+            type="text"
+            placeholder="Room ID: xxxx-xxxx-xxxx-xxxx"
+          />
+        </div>
+        <div class="cnct">
+          <a
+            id="join"
+            class="connect sign-up"
+            onclick="myFunction()"
+            href="/users/"
+            >Join</a
+          >
+          <p style="font-size: 1.5rem">--or--</p>
+          <a class="connect sign-in" href="/users/">Create</a>
+          <!-- <a class = "connect" href="/users/"><div class="sign-in">Create</div></a>-->
+        </div>
+      </div>
     </div>
     <div class="index-animation">
-      <div class="join-container">
-        <input
-          id="myInput"
-          type="text"
-          placeholder="xxxxxx-xxxxx-xxxxx-xxxxx"
-        />
+      <div class="image">
+        <img class="image" src="/images/coding.png" alt="a" />
       </div>
-      <a id="join" onclick="myFunction()" href="/users/">
-        <div class="sign-up">Join</div>
-      </a>
-      <p>-----or-----</p>
-      <a href="/users/">
-        <div class="sign-in">Create</div>
-      </a>
     </div>
   </div>
+
+  <div class="feature-container">
+    <h1>What NurdCollab offers you?</h1>
+
+    <div class="feature-items">
+      <div class="theme">
+        <h3>Choose what suits your eyes<br /></h3>
+        <img src="/images/OIP.jfif" alt="theme-img" />
+        <p>
+          <br />Whether you are a dark theme lover or light theme lover, we have
+          got you. Choose from a variety of editor theme"
+        </p>
+      </div>
+      <div class="lang">
+        <h3>Language syntax support<br /></h3>
+        <img src="/images/langimg.jpg" alt="laguage-img" />
+        <p>
+          <br />NurdCollab supports many programming languages syntax with many
+          intellisence features for almost every language to help you
+        </p>
+      </div>
+      <div class="communication">
+        <h3>Realtime communication<br /></h3>
+        <img src="/images/Remote working.png" alt="communication-img" />
+        <p>
+          <br />Nurdcollab is not just a code editor! Here you can communicate
+          with your fellow coder via video-conferencing for better productivity
+        </p>
+      </div>
+    </div>
+
+    <div class="offer">
+      <div class="left-side">
+        <img src="/images/collab1.png" alt="collab-img" />
+      </div>
+      <div class="right-side">
+        <!--h2>What it offers</h2-->
+        <h1>Collaborate with your mates</h1>
+        <br />
+        <p>
+          "No matter how far you are from your mates now you can collaborate and
+          work with your mates at same place using NurdCollab"
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="connect about-item" style="margin-left: 5%">
+      <h1 style="font-family: serif; font-size: xx-large; text-align: left">
+        NurdCollab
+      </h1>
+      <a
+        class="github"
+        href="https://github.com/AJOO7/nurdcollab"
+        target="_blank"
+        title="Github"
+      >
+        <img
+          src="/images/GitHub-Mark.png"
+          alt="github-icon"
+          style="
+            width: 10%;
+            height: 10%;
+            border-radius: 7px;
+            margin-bottom: 5px;
+          "
+        />
+      </a>
+      <a
+        class="email"
+        href="mailto:sah.akhil.01@gmail.com"
+        target=" _blank"
+        title="Mail"
+      >
+        <img
+          src="/images/gmail-icon.png"
+          alt="email-icon"
+          style="width: 10%; height: 10%; margin-bottom: 5px"
+        />
+      </a>
+    </div>
+
+    <div class="company about-item">
+      <h3>Company</h3>
+      <a href="https://github.com/AJOO7/nurdcollab/blob/main/README.md"
+        >About</a
+      >
+    </div>
+
+    <div class="term-policy about-item">
+      <h3>Terms & Policy</h3>
+      <a href="https://github.com/AJOO7/nurdcollab/blob/main/README.md"
+        >How To Use</a
+      >
+      <a href="https://github.com/AJOO7/nurdcollab/blob/main/README.md"
+        >Code of Conduct</a
+      >
+      <a href="https://github.com/AJOO7/nurdcollab/blob/main/README.md"
+        >Contribute</a
+      >
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var inputVal = document.getElementById("myInput").value;
+      var anchor = document.getElementById("join");
+      anchor.href = anchor.href + inputVal;
+    }
+  </script>
 </div>
-<script>
-  function myFunction() {
-    var inputVal = document.getElementById("myInput").value;
-    var anchor = document.getElementById("join");
-    anchor.href = anchor.href + inputVal;
-  }
-</script>

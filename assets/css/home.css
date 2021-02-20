@@ -1,142 +1,100 @@
-/* .index-container {
-    background: linear-gradient(rgba(216, 94, 190, 0.3), rgba(47, 12, 245, 0.3)), url('../images/Capture.PNG');
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: contain;
-    background-size: auto;
-    height: 92vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@font-face {
+    font-family: "Engula";
+    src: url(../fonts/engula/EngulaThin-rgvZ7.ttf);
+    /*
+    src: url(../fonts/Engula/EngulaRegular-YzqRo.ttf);*/
 }
 
-.inner-container {
-
-    width: 80%;
-    height: 78vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: hsla(0, 0%, 100%, 0.733);
-    margin: 10px;
-    border-radius: 25px;
-    position: relative;
-    top: 4%;
+@font-face {
+    font-family: "Creo";
+    src: url(../fonts/creo/CreoExtralight-x3PLV.ttf);
 }
 
-.index-header {
-    position: relative;
-    font-size: 10vw;
-    text-align: center;
+* {
+    margin: 0;
 }
 
-.index-intro {
-    padding: 15px;
+html,
+body {
+    height: 100%;
 }
 
-.index-animation {
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.index-animation .sign-up {
-    font-size: 1.5vw;
-    padding: 5px;
-    border: 1px solid blue;
-    border-radius: 15px;
-    /* position: relative;
-    top: 10vh;
-    right: 5vw; */
-/* }
-
-.index-animation .sign-in {
-    font-size: 1.5vw;
-    padding: 5px;
-    border: 1px solid blue;
-    border-radius: 15px;
-    /* position: relative;
-top: 10vh;
-left: 5vw; */
-/* }
-
-.index-animation :hover {
-    text-decoration: none;
-    color: black;
-}
-
-#myInput {
-    background: inherit;
-    border: none;
-    border-bottom: solid 2px grey;
-    margin: 10px;
-    padding: 3px;
+.navbar-header {
+    height: 75px;
 
 }
 
-.room-container button {
-    position: relative;
-    top: 10px;
-    height: 10px;
-    padding: 0;
-} */
+.navbar-brand {
+    font-size: 25px;
+    margin-top: 14px;
+}
+
+.navbar-right {
+    margin-top: 11px;
+}
+
+h3 {
+    font-family: "Creo";
+
+}
+
 .index-container {
-    background: linear-gradient(rgba(216, 94, 190, 0.3), rgba(47, 12, 245, 0.3)), url('../images/Capture.PNG');
+    font-family: "Engula";
+    --tw-text-opacity: 1;
+    color: rgba(55, 65, 81, var(--tw-text-opacity));
     background-attachment: fixed;
     background-repeat: repeat;
     background-size: contain;
     background-size: auto;
-    height: 92vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .inner-container {
-    width: 80%;
-    height: 78vh;
+
+    background: white;
+    min-height: 77.25vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: hsla(0, 0%, 100%, 0.733);
-    margin: 10px;
-    border-radius: 5px;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-top: 6%;
     position: relative;
     top: 4%;
 }
 
 .index-header {
+    font-family: "Creo";
     position: relative;
-    font-size: 10vw;
-    text-align: center;
+    font-size: 5vw;
+    margin-left: 1.5%;
+    margin-top: 8%;
 }
 
 .index-intro {
-    padding: 15px;
+    text-align: justify;
+    font-size: 2.25rem;
+    margin-left: 1.5%;
+    width: 85%;
 }
 
 .index-animation {
     height: 45%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 5%;
+    margin-right: 8%;
+    /*   margin-left: 10%;
+*/
 }
 
-/*
-.index-animation .connect {
-    font-size: 1.5vw;
-    padding: 5px;
-    color: #ffffff;
-    background-color: #7a87ff;
-    border-radius: 2.5%;    /* position: relative;
-    top: 10vh;
-    right: 5vw; *
-}*/
+.image {
+    height: 350px;
+    width: 550px;
+    border-radius: 15px;
+    margin-left: 2%;
+}
 
 .index-animation .connect {
     font-size: 1.5vw;
@@ -144,14 +102,25 @@ left: 5vw; */
     color: #ffffff;
     background-color: #7a87ff;
     border-radius: 15px;
-    /* position: relative;
-top: 10vh;
-left: 5vw; */
 }
 
-#join {
-    margin-bottom: 4px;
+.cnct {
+    display: flex;
+    flex-direction: row;
 }
+
+.sign-in {
+    text-align: center;
+    margin: 2%;
+    width: 80px;
+}
+
+.sign-up {
+    margin: 2%;
+    width: 80px;
+    text-align: center;
+}
+
 
 .index-animation .connect:hover {
     text-decoration: none;
@@ -165,6 +134,142 @@ left: 5vw; */
     border-bottom: solid 2px grey;
     margin: 10px;
     padding: 3px;
-    ;
+}
 
+.join-container {
+    width: 250px;
+    font-size: 1.75rem;
+}
+
+.feature-container {
+    background: linear-gradient(rgba(256, 256, 256, 0.3), rgba(27, 123, 202, 0.3));
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 0%;
+    font-size: large;
+}
+
+.feature-container h1 {
+    font-family: "Creo";
+    font-weight: bolder;
+}
+
+.feature-items {
+    font-family: Engula;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 3%;
+}
+
+.feature-items p {
+    margin-left: 8%;
+    font-size: 2.25rem;
+}
+
+.feature-items h3 {
+    font-family: Creo;
+    font-weight: bold;
+}
+
+.feature-items img {
+    width: 60%;
+    height: 60%;
+}
+
+
+.theme {
+    width: 33%;
+}
+
+.lang {
+    width: 33%;
+}
+
+.communication {
+    width: 33%;
+}
+
+.theme img {
+    border-radius: 10px;
+}
+
+.lang img {
+    border-radius: 10px;
+}
+
+.communication img {
+    border-radius: 10px;
+}
+
+.feature-container p {
+    width: 80%;
+    /*text-align: left;*/
+}
+
+.offer {
+    font-family: Engula;
+    font-size: 2.25rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3%;
+}
+
+.right-side h1 {
+    font-family: Creo;
+    font-weight: bolder;
+    margin-right: 19%;
+}
+
+.right-side {
+    margin: auto;
+}
+
+.about,
+.about a {
+    background-color: rgb(4, 4, 24);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-item {
+    width: 33%;
+    margin-left: 15%;
+}
+
+.about-item a {
+    text-align: center;
+}
+
+
+footer {
+    /*position: ;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    background-color: #333;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: #101010;
+    background-color: #333;
+}
+
+.navbar-inverse {
+    background-color: #333;
+    border-color: #080808;
 }
