@@ -6,8 +6,8 @@ Nurd collab lets nerds create cloud room where they can can collaborate with oth
  ## Table of contents
 * [General info](#general-info)
 * [Websites](#websites)
-* * [Home Page](#home-page)
-* * [Editor Page](#editor-page)
+  * [Home Page](#home-page)
+  * [Editor Page](#editor-page)
 * [Features](#features)
 * [Technologies](#technologies)
 * [Installation](#installation)
