@@ -21,23 +21,9 @@ mirrorEditor.setSize("100%", "100%");
 mirrorEditor.on("keyup", function (evt) {
     const text = mirrorEditor.getValue();
     socket.send(text)
-    // console.log(text, "1", text.length);
 })
 
 
-
-
-function copyToClipboard() {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val(mirrorEditor.getValue()).select();
-    document.execCommand("copy");
-    $temp.remove();
-}
-
-function reset() {
-    mirrorEditor.setValue("");
-}
 
 var input = document.getElementById("selectTheme");
 function selectTheme() {
@@ -45,65 +31,13 @@ function selectTheme() {
     var theme = input.options[input.selectedIndex].textContent;
     mirrorEditor.setOption("theme", theme);
 }
+
 var inputLang = document.getElementById("selectLang");
 function selectLang() {
     var lang = inputLang.options[inputLang.selectedIndex].textContent;
     mirrorEditor.setOption("mode", lang);
 }
 
-$('#uploadButton').click(function (e) {
-    e.preventDefault();
-    $('#fileInput').click();
-}
-);
-let fileInput = document.getElementById("fileInput");
-fileInput.addEventListener('change', () => {
-    let files = fileInput.files;
-
-    if (files.length == 0) return;
-    const file = files[0];
-    let reader = new FileReader();
-    reader.onload = (e) => {
-        const file = e.target.result;
-        const lines = file.split(/\r\n|\n/);
-        mirrorEditor.setValue(lines.join('\n'));
-
-    };
-
-    reader.onerror = (e) => alert(e.target.error.name);
-
-    reader.readAsText(file);
-});
-
-$("#download").click(function (e) {
-
-    e.preventDefault();
-    saveTextAsFile();
-});
-function saveTextAsFile() {
-    var textToWrite = mirrorEditor.getValue();
-    console.log(mirrorEditor.getValue());
-    console.log("and", textToWrite);
-    var textFileAsBlob = new Blob([mirrorEditor.getValue()], { type: 'application/json' });
-    var fileNameToSaveAs = "down" + Date.now() + ".txt";
-
-    var downloadLink = document.createElement("a");
-    downloadLink.download = fileNameToSaveAs;
-    downloadLink.innerHTML = "My Hidden Link";
-
-    window.URL = window.URL || window.webkitURL;
-
-    downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-    downloadLink.onclick = destroyClickedElement;
-    downloadLink.style.display = "none";
-    document.body.appendChild(downloadLink);
-
-    downloadLink.click();
-}
-
-function destroyClickedElement(event) {
-    document.body.removeChild(event.target);
-}
 
 
 
@@ -197,6 +131,81 @@ function addVideoStream(video, stream) {
     })
     videoGrid.append(video)
 }
+
+
+
+
+
+function copyToClipboard() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(mirrorEditor.getValue()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
+
+function reset() {
+    mirrorEditor.setValue("");
+}
+
+$('#uploadButton').click(function (e) {
+    e.preventDefault();
+    $('#fileInput').click();
+}
+);
+
+let fileInput = document.getElementById("fileInput");
+fileInput.addEventListener('change', () => {
+    let files = fileInput.files;
+
+    if (files.length == 0) return;
+    const file = files[0];
+    let reader = new FileReader();
+    reader.onload = (e) => {
+        const file = e.target.result;
+        const lines = file.split(/\r\n|\n/);
+        mirrorEditor.setValue(lines.join('\n'));
+
+    };
+
+    reader.onerror = (e) => alert(e.target.error.name);
+
+    reader.readAsText(file);
+});
+
+$("#download").click(function (e) {
+
+    e.preventDefault();
+    saveTextAsFile();
+});
+
+function saveTextAsFile() {
+    var textToWrite = mirrorEditor.getValue();
+    console.log(mirrorEditor.getValue());
+    console.log("and", textToWrite);
+    var textFileAsBlob = new Blob([mirrorEditor.getValue()], { type: 'application/json' });
+    var fileNameToSaveAs = "down" + Date.now() + ".txt";
+
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "My Hidden Link";
+
+    window.URL = window.URL || window.webkitURL;
+
+    downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+
+    downloadLink.click();
+}
+
+function destroyClickedElement(event) {
+    document.body.removeChild(event.target);
+}
+
+
+
 const playButton = document.getElementById('play-button')
 const pauseButton = document.getElementById('pause-button')
 const stopButton = document.getElementById('stop-button')
