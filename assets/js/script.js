@@ -118,7 +118,7 @@ function addVideoStream(video, stream) {
 
 
 
-
+// copying whole document in temporary space
 function copyToClipboard() {
     var $temp = $("<input>");
     $("body").append($temp);
@@ -126,17 +126,16 @@ function copyToClipboard() {
     document.execCommand("copy");
     $temp.remove();
 }
-
+// erase editor text
 function reset() {
     mirrorEditor.setValue("");
 }
-
+// taking file as input and reading and writing on the editor
 $('#uploadButton').click(function (e) {
     e.preventDefault();
     $('#fileInput').click();
 }
 );
-
 let fileInput = document.getElementById("fileInput");
 fileInput.addEventListener('change', () => {
     let files = fileInput.files;
@@ -155,13 +154,12 @@ fileInput.addEventListener('change', () => {
 
     reader.readAsText(file);
 });
-
+// download editor code with unique time extension
 $("#download").click(function (e) {
 
     e.preventDefault();
     saveTextAsFile();
 });
-
 function saveTextAsFile() {
     var textToWrite = mirrorEditor.getValue();
     console.log(mirrorEditor.getValue());
@@ -188,7 +186,7 @@ function destroyClickedElement(event) {
 }
 
 
-
+// adding synthesis utterance for text to speech functionality
 const playButton = document.getElementById('play-button')
 const pauseButton = document.getElementById('pause-button')
 const stopButton = document.getElementById('stop-button')
@@ -215,7 +213,7 @@ utterance.addEventListener('end', () => {
 utterance.addEventListener('boundary', e => {
     currentCharacter = e.charIndex
 })
-
+// playing
 function playText(text) {
     if (speechSynthesis.paused && speechSynthesis.speaking) {
         return speechSynthesis.resume()
@@ -226,14 +224,14 @@ function playText(text) {
     mirrorEditor.setOption("readOnly", true);
     speechSynthesis.speak(utterance)
 }
-
+// pausing
 function pauseText() {
     if (speechSynthesis.speaking) {
         speechSynthesis.pause()
     }
     return
 }
-
+// stopping 
 function stopText() {
     speechSynthesis.resume()
     speechSynthesis.cancel()
