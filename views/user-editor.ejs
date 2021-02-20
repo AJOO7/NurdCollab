@@ -249,6 +249,9 @@
         <button id="clr" onclick="reset()" title="CLear code">
           <i class="fas fa-broom fa-2x"></i>
         </button>
+        <button id="clr" onclick="findInfo()">
+          <i class="fas fa-search fa-2x"></i>
+        </button>
 
         <!--        <input type="button" id="download" value="Download" />
     <input id="fileInput" type="file" /> -->
@@ -508,6 +511,11 @@
 <script src="/js/script.js" defer></script>
 <script>
   const ROOM_ID = "<%= roomId %>";
+  function findInfo() {
+    alert(
+      "Ctrl-F / Cmd-F -> Start searching \nCtrl-G / Cmd-G -> Find next \nShift-Ctrl-G / Shift-Cmd-G -> Find previous \nShift-Ctrl-F / Cmd-Option-F -> Replace \nShift-Ctrl-R / Shift-Cmd-Option-F -> Replace all \nAlt-F -> Persistent search \nAlt-G -> Jump to line "
+    );
+  }
   function copyClipboard(element) {
     var $temp = $("<input>");
     $("body").append($temp);
