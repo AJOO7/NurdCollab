@@ -11,6 +11,7 @@
 }
 
 .editor-main {
+    margin: 25px;
     background: #3d3d3e;
     width: 80%;
     height: 80vh;
