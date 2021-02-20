@@ -39,9 +39,13 @@ Multiple language syntax support
 - Supports multiple users (tested upto 10 users)
 
 ## Technologies
-* Socket.io - version 1.0
-* Web RTC - version 2.0
-* Peerjs - version 3.0
+* Nodejs - version 0.6.1
+* Express - version 4.17.1
+* Ejs - version 3.1.5
+* Socket.io - version 2.0.0
+* Peerjs - version 0.6.1
+* Uuid - version 8.3.2
+* Code Mirror - version 5.59.1
 
 ## Installation
 
