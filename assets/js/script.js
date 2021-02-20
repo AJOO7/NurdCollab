@@ -9,6 +9,8 @@ const mirrorEditor = CodeMirror.fromTextArea(
         autoCloseTags: true,
         autoCloseBrackets: true,
         autofocus: true,
+        autocorrect: true,
+        autosearch: true,
     });
 mirrorEditor.setSize("100%", "100%");
 mirrorEditor.on("keyup", function (evt) {
