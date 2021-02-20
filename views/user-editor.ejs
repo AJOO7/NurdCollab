@@ -523,28 +523,34 @@
     <!--try replacing with clear font awesome symbol-->
   </div>
 </div>
-
+<!-- script for web real time communication -->
 <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+<!-- script for socket.io -->
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
   defer
 ></script>
 <script src="/js/script.js" defer></script>
 <script>
+  // loaclising room id for use in application
   const ROOM_ID = "<%= roomId %>";
+  // providng searching facilities to user through alert
   function findInfo() {
     alert(
       "Ctrl-F / Cmd-F -> Start searching \nCtrl-G / Cmd-G -> Find next \nShift-Ctrl-G / Shift-Cmd-G -> Find previous \nShift-Ctrl-F / Cmd-Option-F -> Replace \nShift-Ctrl-R / Shift-Cmd-Option-F -> Replace all \nAlt-F -> Persistent search \nAlt-G -> Jump to line "
     );
   }
+  // increasing size of text in the editor
   function incSize() {
     curSize = parseInt($(".CodeMirror").css("font-size")) + 2;
     if (curSize <= 32) $(".CodeMirror").css("font-size", curSize);
   }
+  // decreasing size of text in the editor
   function decSize() {
     curSize = parseInt($(".CodeMirror").css("font-size")) - 2;
     if (curSize >= 14) $(".CodeMirror").css("font-size", curSize);
   }
+  // copying  id in form of temp space
   function copyClipboard(element) {
     var $temp = $("<input>");
     $("body").append($temp);
