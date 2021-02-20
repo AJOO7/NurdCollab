@@ -1,8 +1,9 @@
+<!-- editor stylesheet -->
 <link rel="stylesheet" href="/css/user-editor.css" />
-
+<!-- required codemirror scripts -->
 <script src="/cm/lib/codemirror.js"></script>
 <link rel="stylesheet" href="/cm/lib/codemirror.css" />
-<!-- adding languages -->
+<!-- adding languages for codemirro -->
 <script src="/cm/mode/javascript/javascript.js"></script>
 <script src="/cm/mode/cmake/cmake.js"></script>
 <script src="/cm/mode/apl/apl.js"></script>
@@ -129,17 +130,25 @@
 <script src="/cm/mode/z80/z80.js"></script>
 
 <!-- adding edit section of code mirror -->
+<!-- script for adding autoclose to editor -->
 <script src="/cm/addon/edit/closetag.js"></script>
+<!-- script for adding auto close brackets to editor -->
 <script src="/cm/addon/edit/closebrackets.js"></script>
+<!-- script for adding continue list to editor -->
 <script src="/cm/addon/edit/continuelist.js"></script>
+<!-- script for identifying sorresponding brackets in editor -->
 <script src="/cm/addon/edit/matchbrackets.js"></script>
+<!-- script to identify matching tag(specially for XMLs) -->
 <script src="/cm/addon/edit/matchtags.js"></script>
+<!-- script for trailing spaces in editor -->
 <script src="/cm/addon/edit/trailingspace.js"></script>
-
-<script src="/cm/addon/search/searchcursor.js"></script>
-<script src="/cm/addon/search/jump-to-line.js"></script>
-<script src="/cm/addon/dialog/dialog.js"></script>
+<!-- script implementing search functionality on editor -->
 <script src="/cm/addon/search/search.js"></script>
+<script src="/cm/addon/search/searchcursor.js"></script>
+<!-- script implementing jump to particular line functionality on editor -->
+<script src="/cm/addon/search/jump-to-line.js"></script>
+<!-- script for search dialog box in editor -->
+<script src="/cm/addon/dialog/dialog.js"></script>
 <link rel="stylesheet" href="/cm/addon/dialog/dialog.css" />
 
 <!-- adding themes for theme section -->
@@ -208,9 +217,10 @@
 <link rel="stylesheet" href="/cm/theme/yonce.css" />
 <link rel="stylesheet" href="/cm/theme/zenburn.css" />
 
+<!-- scripts for scroll bar in editor -->
+<script src="/cm/addon/scroll/simplescrollbars.js"></script>
 <script src="/cm/addon/scroll/annotatescrollbar.js"></script>
 <script src="/cm/addon/scroll/scrollpastend.js"></script>
-<script src="/cm/addon/scroll/simplescrollbars.js"></script>
 <link rel="stylesheet" href="/cm/addon/scroll/simplescrollbars.css" />
 
 <div class="editor-container">
