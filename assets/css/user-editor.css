@@ -1,4 +1,5 @@
 .editor-container {
+    margin-top: 2%;
     background: #191919;
     background-attachment: fixed;
     background-repeat: repeat;
@@ -11,7 +12,6 @@
 }
 
 .editor-main {
-    margin: 25px;
     background: #3d3d3e;
     width: 80%;
     height: 80vh;
