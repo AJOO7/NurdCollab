@@ -54,7 +54,7 @@ Multiple language syntax support
 
 ## Installation
 
-Install [node.js]{https://nodejs.org/en/download/} on the system
+Install [node.js](https://nodejs.org/en/download/) on the system
 Run Node.js command prompt
 
 ```sh
