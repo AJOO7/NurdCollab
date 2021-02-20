@@ -14,12 +14,7 @@ Nurd collab lets nerds create cloud room where they can can collaborate with oth
 
 ## General info
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
-
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+Nurd collab is an online platform that provides online text editor supporting real time collaboration among multiple users. It supports various editor background themes and programming language syntax. Real time communication (audio as well as video) along with other features takes peer programming to a different level.
 
 ## Website
 
@@ -35,12 +30,13 @@ Multiple language syntax support
 
 ## Features
 
-- Peer coding 
-- Multiple language syntax support
-- Multiple Background themes
-- Realtime collaboration
+- Code collaboration at real time
+- Support for multiple programming language syntax
+- Support for multiple editor background themes
+- Realtime communication via audio and video chat
 - Upload/Download source code
-- Text reader
+- Text reader for reading content of editor
+- Supports multiple users (tested upto 10 users)
 
 ## Technologies
 * Socket.io - version 1.0
