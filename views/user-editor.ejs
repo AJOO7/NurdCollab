@@ -254,8 +254,14 @@
         <button id="clr" onclick="reset()" title="Clear code">
           <i class="fas fa-broom fa-2x"></i>
         </button>
-        <button id="clr" onclick="findInfo()">
+        <button id="clr" onclick="findInfo()" title="Search code">
           <i class="fas fa-search fa-2x"></i>
+        </button>
+        <button id="clr" onclick="incSize()">
+          <i class="fas fa-plus fa-2x"></i>
+        </button>
+        <button id="clr" onclick="decSize()">
+          <i class="fas fa-minus fa-2x"></i>
         </button>
 
         <!--        <input type="button" id="download" value="Download" />
@@ -520,6 +526,14 @@
     alert(
       "Ctrl-F / Cmd-F -> Start searching \nCtrl-G / Cmd-G -> Find next \nShift-Ctrl-G / Shift-Cmd-G -> Find previous \nShift-Ctrl-F / Cmd-Option-F -> Replace \nShift-Ctrl-R / Shift-Cmd-Option-F -> Replace all \nAlt-F -> Persistent search \nAlt-G -> Jump to line "
     );
+  }
+  function incSize() {
+    curSize = parseInt($(".CodeMirror").css("font-size")) + 2;
+    if (curSize <= 32) $(".CodeMirror").css("font-size", curSize);
+  }
+  function decSize() {
+    curSize = parseInt($(".CodeMirror").css("font-size")) - 2;
+    if (curSize >= 14) $(".CodeMirror").css("font-size", curSize);
   }
   function copyClipboard(element) {
     var $temp = $("<input>");
