@@ -14,6 +14,8 @@ const mirrorEditor = CodeMirror.fromTextArea(
         searchcursor: true,
         jumptoline: true,
         matchBrackets: true,
+        annotateScrollbar: true,
+        showMatchesOnScrollbar: true,
     });
 mirrorEditor.setSize("100%", "100%");
 mirrorEditor.on("keyup", function (evt) {
