@@ -11,6 +11,9 @@ const mirrorEditor = CodeMirror.fromTextArea(
         autofocus: true,
         autocorrect: true,
         autosearch: true,
+        searchcursor: true,
+        jumptoline: true,
+        matchBrackets: true,
     });
 mirrorEditor.setSize("100%", "100%");
 mirrorEditor.on("keyup", function (evt) {
