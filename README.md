@@ -22,17 +22,17 @@ Nurd collab is an online platform that provides online text editor supporting re
 
 ### Home Page
 
-![Website Preview](./assets/images/Capture1.png)
-![Website Preview](./assets/images/Capture2.png)
-![Website Preview](./assets/images/Capture3.png)
+![Website Preview](./assets/images/Capture1.PNG)
+![Website Preview](./assets/images/Capture2.PNG)
+![Website Preview](./assets/images/Capture3.PNG)
 
 ### Editor Page
 
 Code Editor
-![Website Preview](./assets/images/Capture4.png)
+![Website Preview](./assets/images/Capture4.PNG)
 
 Video chat
-![Website Preview](./assets/images/Capture5.png)
+![Website Preview](./assets/images/Capture5.PNG)
 
 ## Features
 
