@@ -22,6 +22,7 @@ AngularJS-powered HTML5 Markdown editor.
 - ✨Magic ✨
 
 ##Website
+
 ###Home Page
 ![Website Preview](./assets/images/home_page.png)
 
