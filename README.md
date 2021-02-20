@@ -21,12 +21,12 @@ AngularJS-powered HTML5 Markdown editor.
 - See HTML in the right
 - ✨Magic ✨
 
-##Website
+## Website
 
-###Home Page
+### Home Page
 ![Website Preview](./assets/images/home_page.png)
 
-###Editor Page
+### Editor Page
 Multiple background theme
 ![Website Preview](./assets/images/home_page.png)
 
