@@ -2,7 +2,7 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/AJOO7/nurdcollab.svg)](https://github.com/AJOO7/nurdcollab/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/AJOO7/nurdcollab.svg)](https://github.com/AJOO7/nurdcollab/issues) [![Live Site](https://img.shields.io/badge/demo-online-green.svg)](https://nurdcollab.herokuapp.com)
 
-Nurd collab lets nerds create cloud room where they can can collaborate with other nerds and work on any project with real time editor and real time communication.just a step to ease the lives of nerd community..
+Nurd collab lets nerds create cloud room where they can can collaborate with other nerds and work on any project with real time editor and real time communication.
 
 ## Table of contents
 
