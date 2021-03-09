@@ -1,8 +1,8 @@
-# Nurd Collab
+# NurdCollab
 
 [![GitHub Stars](https://img.shields.io/github/stars/AJOO7/nurdcollab.svg)](https://github.com/AJOO7/nurdcollab/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/AJOO7/nurdcollab.svg)](https://github.com/AJOO7/nurdcollab/issues) [![Live Site](https://img.shields.io/badge/demo-online-green.svg)](https://nurdcollab.herokuapp.com)
 
-Nurd collab lets nerds create cloud room where they can can collaborate with other nerds and work on any project with real time editor and real time communication.just a step to ease the lives of nerd community..
+NurdCollab lets nerds create cloud room where they can can collaborate with other nerds and work on any project with real time editor and real time communication.
 
 ## Table of contents
 
@@ -16,7 +16,7 @@ Nurd collab lets nerds create cloud room where they can can collaborate with oth
 
 ## General info
 
-Nurd collab is an online platform that provides online text editor supporting real time collaboration among multiple users. It supports various editor background themes and programming language syntax. Real time communication (audio as well as video) along with other features takes peer programming to a different level.
+NurdCollab is an online platform that provides online text editor supporting real time collaboration among multiple users. It supports various editor background themes and programming language syntax. Real time communication (audio as well as video) along with other features takes peer programming to a different level.
 
 ## Website
 
